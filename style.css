@@ -1,0 +1,161 @@
+html {
+  overflow: hidden;
+}
+
+.body {
+  background-color: #3e1a42;
+  margin: 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.wrapper {
+  width: 75%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.box {
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+}
+
+.box-02 {
+  align-items: flex-start;
+}
+
+.fruit {
+  width: 100%;
+  position: relative;
+  z-index: 3;
+}
+
+svg g {
+  filter: none;
+}
+
+.fruit:hover {
+  filter: drop-shadow(0 0 25px white);
+}
+
+.line {
+  position: absolute;
+  background-color: #4e1756;
+  height: 4%;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.line-03 {
+  display: flex;
+  flex-direction: column;
+}
+
+.subline-01 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.subline-02 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.subline-03 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+  position: relative;
+}
+
+.subline-04 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+  position: relative;
+  transform: rotate(180deg);
+}
+
+.secondary {
+  position: absolute;
+  right: -100%;
+  top: 0;
+}
+
+.subline__child-01 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.subline__child-02 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.line__circle {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.line__square {
+  width: 9px;
+  height: 9px;
+  background-color: white;
+}
+
+.line__line {
+  width: 40px;
+  height: 1px;
+  background-color: white;
+}
+
+.orange {
+  background-color: orange;
+}
+
+@media screen and (max-width: 800px) {
+  .wrapper {
+    height: 80%;
+  }
+
+  .line__circle {
+    width: 3px;
+    height: 3px;
+  }
+
+  .line__square {
+    width: 4px;
+    height: 4px;
+  }
+
+  .line__line {
+    width: 20px;
+  }
+
+  .line {
+    height: 2%;
+  }
+}
